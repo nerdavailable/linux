@@ -1,0 +1,12 @@
+# Checking the Current Time Zone
+timedatectl
+ls -l /etc/localtime
+
+# Changing the Time Zone
+timedatectl list-timezones
+sudo timedatectl set-timezone <time_zone>
+
+# Removing the current symlink or file
+sudo rm -rf /etc/localtime
+
+
